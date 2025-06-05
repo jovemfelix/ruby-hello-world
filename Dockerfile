@@ -5,6 +5,7 @@ ENV RACK_ENV production
 ENV RAILS_ENV production
 COPY . /opt/app-root/src/
 ENV GEM_HOME ~/.gem
+ENV BUNDLE_FROZEN true
 RUN bundle install
 CMD ["./run.sh"]
 
